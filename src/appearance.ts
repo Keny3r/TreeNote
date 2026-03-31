@@ -11,7 +11,7 @@ export const themeCompartment = new Compartment();
 let currentThemeId = DEFAULT_THEME;
 
 async function getStore() {
-  return await load("treenote-config.json", { autoSave: true });
+  return await load("treenote-config.json", { autoSave: true, defaults: {} });
 }
 
 export function getCurrentThemeId(): string {

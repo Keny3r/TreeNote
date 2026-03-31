@@ -42,7 +42,7 @@ function setModified(value: boolean) {
 
 // ── File operations ─────────────────────────────────────────────────
 async function getStore() {
-  return await load("treenote-config.json", { autoSave: true });
+  return await load("treenote-config.json", { autoSave: true, defaults: {} });
 }
 
 async function saveLastPath() {
