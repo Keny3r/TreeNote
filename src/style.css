@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-family: "Courier New", monospace;
+  background: #ffffff;
+}
+
+#editor {
+  height: 100%;
+  width: 100%;
+}
+
+/* CodeMirror fills its container */
+.cm-editor {
+  height: 100%;
+  font-size: 14px;
+}
+
+/* Overscroll */
+.cm-content {
+  padding-bottom: 50vh !important;
+}
+
+/* Gutter structural styles (colors come from CodeMirror theme) */
+.cm-lineNumbers .cm-gutterElement {
+  padding: 0 8px 0 4px;
+  min-width: 32px;
+}
+
+/* Fold gutter structural */
+.cm-foldGutter .cm-gutterElement {
+  padding: 0 4px;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+/* Folded line placeholder structural */
+.cm-foldPlaceholder {
+  border-radius: 3px;
+  padding: 0 6px;
+  margin: 0 4px;
+  font-size: 0.85em;
+  cursor: pointer;
+}

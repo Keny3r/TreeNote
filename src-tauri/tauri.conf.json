@@ -1,0 +1,35 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nickvdyck/tauri-settings-schema/main/schemas/v2/tauri.conf.schema.json",
+  "productName": "TreeNote",
+  "version": "0.1.0",
+  "identifier": "com.treenote.app",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:1420",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "TreeNote",
+        "width": 900,
+        "height": 700
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  },
+  "plugins": {}
+}
